@@ -1,1 +1,1 @@
-This is a sample html with basic css design.
+This is a basic html with basic html styling.

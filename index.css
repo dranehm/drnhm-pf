@@ -189,3 +189,22 @@ nav ul li a:focus{
         height: auto;
     }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 766px) {
+    #name {
+        font-size: 16pt;
+    }
+
+    #bio {
+        font-size: 12pt;
+    }
+
+    .desc{
+        font-size: 14pts;
+    }
+
+    .icons img{
+        width: 90px;
+        height: auto;
+    }
+}

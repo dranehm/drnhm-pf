@@ -47,15 +47,6 @@ body {
     overflow-x: hidden;
 }
 
-footer {
-    height: 40px;
-    background-color: #393e46;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -127,6 +118,7 @@ nav ul li a:focus{
 
 #home{
     flex-direction: row;
+    text-wrap: wrap;
 }
 
 #skill-box{
@@ -157,17 +149,26 @@ nav ul li a:focus{
     display: block;
 }
 
+footer {
+    height: 40px;
+    background-color: #393e46;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 #footer-container{
     margin-left: 80px;
-    margin-top: 8px;
     display: flex;
     align-items: center;
     align-self: center;
     align-content: center;
+    height: 40px;
 }
 
 #footer-container a{
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
 }
 
 .social-media{
@@ -213,7 +214,7 @@ nav ul li a:focus{
     }
 
     .desc{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .icons img{
@@ -236,8 +237,8 @@ nav ul li a:focus{
 /* SMALL */
 @media only screen and (max-width: 480px) {
     #name {
-        margin-top: 7   0px;
-        font-size: 14px;
+        margin-top: 70px;
+        font-size: 12px;
         font-weight: 800px;
     }
 
@@ -246,7 +247,7 @@ nav ul li a:focus{
     }
 
     .desc{
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .icons img{
@@ -309,8 +310,35 @@ nav ul li a:focus{
         padding: 15px 8px;
         text-align: center;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
+    }
+
+    footer {
+        height: 30px;
+        background-color: #393e46;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
+    #footer-container{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        height: 30px;
+    }
+    
+    #footer-container a{
+        padding: 0 8px;
+    }
+    
+    .social-media{
+        height: 15px;
     }
 
 }

@@ -110,8 +110,12 @@ nav ul li a:focus{
 }
 
 #name{
-    font-size: 36pt;
+    font-size: 35px;
     font-weight: 500;
+}
+
+.desc{
+    font-size: 20px;
 }
 
 .container-image{
@@ -171,40 +175,142 @@ nav ul li a:focus{
     
 }
 
+/* LARGE */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #name {
-        font-size: 20pt;
+        font-size: 26px;
     }
 
     #bio {
-        font-size: smaller;
+        font-size: 18px;
     }
 
     .desc{
-        font-size: small;
+        font-size: 16px;
     }
 
     .icons img{
         width: 90px;
         height: auto;
+    }
+
+    .container-image{
+        height: 200px;
+        margin-right: 50px;
+        border-radius: 20px;
+        margin-top: 40px;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 766px) {
+/* MEDIUM */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
     #name {
-        font-size: 16pt;
+        font-size: 8px;
     }
 
     #bio {
-        font-size: 12pt;
+        font-size: 12px;
     }
 
     .desc{
-        font-size: 14pts;
+        font-size: 12px;
     }
 
     .icons img{
         width: 90px;
         height: auto;
     }
+
+    .container-image{
+        height: 100px;
+        margin-right: 50px;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+    
+    .container{
+        height: 400px;
+    }
+}
+
+/* SMALL */
+@media only screen and (max-width: 480px) {
+    #name {
+        margin-top: 7   0px;
+        font-size: 14px;
+        font-weight: 800px;
+    }
+
+    #bio {
+        font-size: 10px;
+    }
+
+    .desc{
+        font-size: 10px;
+    }
+
+    .icons img{
+        width: 50px;
+        height: auto;
+    }
+
+    .container-image{
+        height: 100px;
+        margin-right: 50px;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+
+    .container{
+        height: 300px;
+    }
+
+    #skill-box{
+        height: 250px;
+    }
+
+    .icons{
+        margin: 0 10px;
+    }
+
+    header {
+        height: 30px;
+        background-color: #393e46;
+        position: fixed;
+        width: 100%;
+    }
+    
+    #branding{
+        height: 30px;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        font-weight: 1000;
+        padding: 0 20px;
+        margin-left: 10px;
+    }
+    
+    #branding p{
+        font-size: 12px;
+    }
+    
+    nav ul{
+        padding: 0 20px 0 0;
+    }
+    
+    nav ul li {
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul li a {
+        color: #eeeeee;
+        padding: 15px 8px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
 }

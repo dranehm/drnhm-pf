@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div id="branding">
+            <p>drnhm.io</p>        
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></h3></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="container">
+            <span><img class="container-image"
+                    src="https://fastly.picsum.photos/id/8/5000/3333.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA"
+                    alt="coding"></span>
+            <div>
+                <p id="name">
+                Hello, I'm Mhenard
+                </p><br>
+                <!-- <hr style="width: 450px; float: left; margin-top: -20px; border: 1px solid #FD7014" ;> -->
+                <p class="desc">
+                <h4 style="font-size: 14pt;">I'm a software engineer specializing Back-End Development.</h4>
+                </p><br><br>
+                <p class="desc">
+                <h4 style="font-size: 14pt;"><i>"A thousand miles begins with a single step".</i></h4>
+                </p>
+            </div>
+        </div>
+        <hr class="guideline">
+
+        <div id="about" class="container">
+            <span><img class="container-image"
+                    src="https://fastly.picsum.photos/id/119/3264/2176.jpg?hmac=PYRYBOGQhlUm6wS94EkpN8dTIC7-2GniC3pqOt6CpNU"
+                    alt="coding"></span>
+            <div>
+                <p style="line-height: 1.8;">
+                <h2 id="bio">
+                    I earned my Bachelor's degree in Information Technology in 2019, a culmination of hard work and
+                    collaboration. I embraced every opportunity to make my education a reality, developing new software
+                    and streamlining existing IT setups. Each project allowed me to push the envelope of innovation and
+                    contribute to the digital world.
+                </h2>
+                </p>
+            </div>
+
+        </div>
+        <hr class="guideline">
+        <div id="skills" class="container">
+            <div id="skill-box">
+                <span class="icons"><img src="https://www.php.net/images/logos/new-php-logo.png" alt="PHP"></span>
+                <span class="icons"><img src="https://static.wikia.nocookie.net/logopedia/images/1/19/HTML5_shield.svg" alt="HTML5"></span>
+                <span class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"alt="JS"></span>
+                <span class="icons"><img src="https://www.drupal.org/files/project-images/rain-drop-hi.png"alt="REST API"></span>
+                <span class="icons"><img src="https://cp.beget.com/shared/MALLmyMEwExJH2Xo3cFqrxq2iFC_twCk/logo_nodejs.png" alt="NodeJS"></span>
+                <span class="icons"><img src="https://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="MySQL"></span>
+                <span class="icons"><img src="https://cdn.iconscout.com/icon/free/png-256/free-postman-3628992-3030217.png" alt="Postman"></span>
+                <span class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Adobe_Photoshop_Express_logo.svg/1200px-Adobe_Photoshop_Express_logo.svg.png" alt="Photoshop"></span>
+                <span class="icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" alt="BootStrap"></span>
+                <span class="icons"><img src="https://seeklogo.com/images/M/microsoft-sql-server-logo-96AF49E2B3-seeklogo.com.png" alt="MS SQL" ></span>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <a href="https://www.instagram.com/drnhm.g"><img class="social-media"src="https://cdn-icons-png.flaticon.com/128/15707/15707749.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/drnhm.g"><img class="social-media" src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/drnhmg"><img class="social-media" src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    $('li').click(function() {
+        $(this).siblings().find('a').removeClass('focus');
+        $(this).find('a').addClass('focus');
+    });
+
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+</script>

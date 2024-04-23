@@ -1,1 +1,1 @@
-This is a basic html with basic html styling.
+This is a basic html with css styling.
